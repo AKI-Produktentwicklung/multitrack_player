@@ -34,7 +34,7 @@ app.use(express.static(path.resolve(__dirname, "client")));
 // launch the http server on given port
 server.listen(PORT || 3000, addrIP || "0.0.0.0", () => {
   const addr = server.address();
-  console.log("Multitrack Player server listening at", addr.address + ":" + addr.port);
+  console.log("Multitrack Player Server listening at", addr.address + ":" + addr.port);
 });
 
 // routing
